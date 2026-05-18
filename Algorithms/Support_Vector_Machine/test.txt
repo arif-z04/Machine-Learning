@@ -1,0 +1,29 @@
+My IOT project:
+
+SoilSync: Remote Soil moisture Monitoring using LoRa technology
+
+Home kit: 
+- Arduino Nano 
+- LoRa 1278 (10uF capacitor for powering up)
+- LCD Display 
+- LEDs (R, G, Y) and Buzzer 
+
+Field kit
+- Arduino Nano 
+- LoRa 1278 
+- TP4056
+- MT3608 
+- YL69 Soil Sensor
+- Solar (connected with 10K,20K resistor to A3)
+- Battery (connected with 10K, 10K resistor to A1) 
+
+Soil Moisture Status: 
+- Dry: Red  (Buzzer warning)
+- Mid-Dry: Yellow 
+- Wet: Green 
+
+Data Format: 
+Packet: 
+| Timestamp | Soil % | Soil_Raw | Soil_Stat | Solar Stat | SolarVolt | BatteryVolt | Battery% |
+Example: 
+|45000|92|341|WET|ON|2.04|4.3|90|
