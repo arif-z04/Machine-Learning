@@ -4,7 +4,6 @@ __pycache__/
 .env
 .vscode/
 .idea/
-setup.sh
 *.pyc
 *.pyo
 *.pyd
